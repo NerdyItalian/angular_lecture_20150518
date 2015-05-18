@@ -1,11 +1,25 @@
 <!doctype html>
-<html>
+<!--This myApp is referring to the myApp variable in the app.js-->
+<html ng-app="myApp">
+<!--ng-app doesn't have to be in the HTML tag. We can specify it anywhere in the other tags (body, div, etc)-->
     <head>
         <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.css">
 
     </head>
 
     <body>
+    <!--&lt;!&ndash; This is an example of data binding. the {{}} are angular specific, 'name' refers to the input ng-model tag&ndash;&gt;-->
+        <!--<div class="container" ng-controller="WelcomeController">-->
+            <!--&lt;!&ndash; .controller in the app.js is calling this ng-controller&ndash;&gt;-->
+            <!--<div class="col-md-offset-2">-->
+                <!--<div>-->
+                    <!--<h1>{{heading + message}}</h1>-->
+                    <!--<input ng-model="name" type="text" placeholder="Enter your name here">-->
+                <!--</div>-->
+                <!--<button ng-click="updateMessage()">Update</button>-->
+            <!--</div>-->
+        <!--</div>-->
+
         <script type="text/javascript" src="/vendor/angular/angular.min.js"></script>
         <script type="text/javascript" src="/javascripts/app.min.js"></script>
     </body>
